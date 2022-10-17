@@ -7,6 +7,7 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list c);
 int print_int(va_list i);
+int printf_string(va_list s);
 int print_dec(va_list d);
 int print_rev(va_list r);
 int printf_bin(va_list b);

@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_bin - convert to binary.
+ * printf_bin - convert to binary.
  * @b: number in decinal.
  * Return: number of chars printed.
  */
