@@ -2,22 +2,26 @@
 #define MAIN_H
 
 #include <stdarg.h>
-int _putchar(char c);
-int _printf(const char *format, ...);
-int print_char(va_list c);
-int print_string(va_list s);
-int print_int(va_list i);
-int print_dec(va_list d);
-/**
-  * struct code_format - Struct format
-  *
-  * @sc: The specifiers
-  * @f: The function associated
-  */
-typedef struct code_format
-{
-	char *sc;
-	int (*f)(va_list);
-} code_f;
 
-#endif /* MAIN_H */
+int _printf(const char *format, ...);
+int ret_char(va_list arg);
+int ret_str(va_list arg);
+int _putchar(char c);
+
+
+/**
+ * struct TypeStruct - The structure of our own defined type
+ *
+ * @t: Type to use
+ *
+ * @out: Function to handle the returns
+ */
+
+typedef struct TypeStruct
+{
+	char *t;
+
+	int (*out)(va_list);
+} TypeStruct;
+
+#endif
