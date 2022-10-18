@@ -1,4 +1,4 @@
-include "holberton.h"
+#include "main.h"
 
 /**
  * print_address - prints address of input in hexa format
@@ -15,6 +15,7 @@ int print_address(va_list l, flags_t *f)
 	register int count = 0;
 
 	(void)f;
+
 	if (!p)
 		return (_puts("(nil)"));
 	str = convert(p, 16, 1);
